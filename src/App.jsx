@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Registration from "./pages/registration/registration";
 import Homepage from "./pages/Homepage/Homepage";
 import AITransformPage from "./pages/AITransformPage/AITransformPage";
 import Login from "./pages/Login/Login";
@@ -16,7 +15,6 @@ function App() {
         {location.pathname !== "/" && <Header />}
         <Routes>
           <Route exact path="/" element={<Login />} />
-          <Route exact path="/register" element={<Registration />} />
           <Route exact path="/home" element={<Homepage />} />
           <Route exact path="/ai-transform" element={<AITransformPage />} />
         </Routes>
